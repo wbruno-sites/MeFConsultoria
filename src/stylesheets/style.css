@@ -8,19 +8,16 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; letter-spacing: -1px; }
 figure { margin: 0; }
 .fleft { float: left;}
 
-.content { padding: 0 40px; }
+.content { padding: 0 40px; max-width: 1140px; margin: 0 auto; }
 .border-bottom { border-bottom: 1px solid #ddd; }
 
 #header { padding-top: 20px; padding-bottom: 20px; }
-#menu { padding: 20px 0 0; text-align: right; }
-#menu ul { list-style: none; padding: 0; }
-
-.menu-item {
-  margin-right: 30px; display: inline;
-  font-size: 16px;
-}
-
 
 #footer {
   font-size: 0.7em;
+}
+
+/* 768px */
+@media screen and (max-width: 48em) {
+  #logo { text-align: center; }
 }

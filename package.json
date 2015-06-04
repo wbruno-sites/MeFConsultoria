@@ -15,5 +15,13 @@
   "engines": {
     "node": "0.12.x",
     "npm": "2.9.x"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5"
   }
 }
