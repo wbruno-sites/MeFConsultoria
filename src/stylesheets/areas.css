@@ -1,8 +1,0 @@
-.areas-title {
-  height: 2.1em;
-}
-
-/* 768px */
-@media screen and (max-width: 48em) {
-  .areas-title { height: 1em; }
-}
