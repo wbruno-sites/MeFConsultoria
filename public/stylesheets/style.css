@@ -1,8 +1,26 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 300 14px "Open Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.1em;
 }
 
-a {
-  color: #00B7FF;
+a { color: #00B7FF; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; letter-spacing: -1px; }
+figure { margin: 0; }
+.fleft { float: left;}
+
+.content { padding: 0 40px; }
+.border-bottom { border-bottom: 1px solid #ddd; }
+
+#header { padding-top: 20px; padding-bottom: 20px; }
+#menu { padding: 20px 0 0; text-align: right; }
+#menu ul { list-style: none; padding: 0; }
+
+.menu-item {
+  margin-right: 30px; display: inline;
+  font-size: 16px;
+}
+
+
+#footer {
+  font-size: 0.7em;
 }

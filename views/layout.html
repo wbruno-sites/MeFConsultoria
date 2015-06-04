@@ -2,9 +2,37 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>{% block title %}Moraes e Ferreira Consultoria{% endblock %}</title>
+  <title>{% block title %}Moraes e Ferreira - Consultoria Estratégica Financeira{% endblock %}</title>
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/pure-min.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
 </head>
 <body>
+<header id="header" class="content pure-g border-bottom">
+  <figure class="pure-u-1-4">
+    <img src="/images/mef-logo.png" />
+  </figure>
+
+  <nav id="menu" class="pure-u-3-4">
+    <ul>
+      <li class="menu-item"><a href="/">Home</a></li>
+      <li class="menu-item"><a href="/quem-somos">Quem somos</a></li>
+      <li class="menu-item"><a href="/contato">Contato</a></li>
+    </ul>
+  </nav><!-- #menu -->
+
+</header><!-- #header -->
+
+<article class="content pure-g border-bottom">
 {% block content %}{% endblock %}
+</article>
+
+<footer id="footer" class="content pure-g">
+  <p class="pure-u-1">&copy;Moraes e Ferreira - Consultoria Estratégica Financeira</p>
+</footer><!-- footer -->
 </body>
 </html>
