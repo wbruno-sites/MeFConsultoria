@@ -24,3 +24,8 @@ figure { margin: 0; }
 @media screen and (max-width: 48em) {
   #logo { text-align: center; }
 }
+
+/* 400px */
+@media screen and (max-width: 25em) {
+  .content { padding: 0 15px; }
+}
