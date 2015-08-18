@@ -2,18 +2,18 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>{% block title %}Moraes e Ferreira - Consultoria Estratégica Financeira{% endblock %}</title>
+  <title>Moraes e Ferreira - Consultoria Estratégica Financeira</title>
 
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
   <meta name="description" content="Oferecemos soluções financeiras na medida para a sua startup. Tenha dentro de sua empresa todo o apoio financeiro e seu business plan, através de nossa parceria." />
 
   <meta name="google-site-verification" content="V0sfSaS08vyyO_eRegBBlQSzEEqXra12k6DjF4Y7qNs" />
 
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon" />
 
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="/stylesheets/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/all.min.css" />
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -28,7 +28,7 @@
 <body>
 <header id="header" class="content pure-g border-bottom">
   <figure id="logo" class="pure-u-md-1-4 pure-u-1">
-    <a href="/"><img src="/images/mef-logo.png" /></a>
+    <a href="/"><img src="public/images/mef-logo.png" /></a>
   </figure>
 
   <nav id="menu" class="pure-u-md-3-4 pure-u-1">
@@ -42,7 +42,17 @@
 </header><!-- #header -->
 
 <article id="main" class="content border-bottom">
-{% block content %}{% endblock %}
+<?php
+  $page = isset($_GET['page']) ? $_GET['page'] : 'index';
+  $file = 'views/' . $page . '.html';
+
+  if (is_file($file)) {
+    include $file;
+  } else {
+    include 'views/error.html';
+  }
+
+?>
 </article>
 
 <footer id="footer" class="content pure-g">
